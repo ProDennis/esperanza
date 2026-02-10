@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/esperanza/',
+  base: 'https://prodennis.github.io/esperanza',
   plugins: [
     react(),
     tailwindcss(),
