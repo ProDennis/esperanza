@@ -679,7 +679,7 @@ function MenuItem({ item }: { item: any }) {
             <div className="relative mb-4 flex justify-center">
                 <div className="absolute inset-0 bg-amber-200 rounded-full blur-xl opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
                 <img
-                    src={item.image}
+                    src={`${import.meta.env.BASE_URL}${item.image.startsWith('/') ? item.image.slice(1) : item.image}`}
                     alt={item.name}
                     className="w-40 h-40 object-contain drop-shadow-md transform group-hover:scale-110 transition-transform duration-300"
                 />
