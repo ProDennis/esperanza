@@ -5,635 +5,562 @@ export default function FoodMenu() {
     const [menu] = useState([
         {
             "id": 1,
-            "code": "PU-AYO-001",
             "name": "Pupusa de Ayote",
             "type": "pupusa",
             "category": "tradicional",
-            "price": 1.5,
             "description": "Pupusa de Ayote acompañada de curtido y salsa.",
-            "image": "/pupusa.png"
+            "image": "pupusa.webp",
+            "variations": [{ "price": 1.5 }]
         },
         {
             "id": 2,
-            "code": "PU-LOR-002",
             "name": "Pupusa de Loroco",
             "type": "pupusa",
             "category": "tradicional",
-            "price": 1.5,
             "description": "Pupusa de Loroco acompañada de curtido y salsa.",
-            "image": "/pupusa.png"
+            "image": "pupusa.webp",
+            "variations": [{ "price": 1.5 }]
         },
         {
             "id": 3,
-            "code": "PU-MOR-003",
             "name": "Pupusa de Mora",
             "type": "pupusa",
             "category": "especial",
-            "price": 1.5,
             "description": "Pupusa de Mora acompañada de curtido y salsa.",
-            "image": "/pupusa.png"
+            "image": "pupusa.webp",
+            "variations": [{ "price": 1.5 }]
         },
         {
             "id": 4,
-            "code": "PU-ESP-004",
             "name": "Pupusa de Espinaca",
             "type": "pupusa",
             "category": "especial",
-            "price": 1.5,
             "description": "Pupusa de Espinaca acompañada de curtido y salsa.",
-            "image": "/pupusa.png"
+            "image": "pupusa.webp",
+            "variations": [{ "price": 1.5 }]
         },
         {
             "id": 5,
-            "code": "PU-JAL-005",
             "name": "Pupusa de Jalapeño",
             "type": "pupusa",
             "category": "especial",
-            "price": 1.75,
             "description": "Pupusa de Jalapeño acompañada de curtido y salsa.",
-            "image": "/pupusa.png"
+            "image": "pupusa.webp",
+            "variations": [{ "price": 1.75 }]
         },
         {
             "id": 6,
-            "code": "PU-POL-006",
             "name": "Pupusa de Pollo",
             "type": "pupusa",
             "category": "especial",
-            "price": 2,
             "description": "Pupusa de Pollo acompañada de curtido y salsa.",
-            "image": "/pupusa.png"
+            "image": "pupusa.webp",
+            "variations": [{ "price": 2 }]
         },
         {
             "id": 7,
-            "code": "PU-RES-007",
             "name": "Pupusa de Res",
             "type": "pupusa",
             "category": "especial",
-            "price": 2,
             "description": "Pupusa de Res acompañada de curtido y salsa.",
-            "image": "/pupusa.png"
+            "image": "pupusa.webp",
+            "variations": [{ "price": 2 }]
         },
         {
             "id": 8,
-            "code": "PU-CHO-008",
             "name": "Pupusa de Chorizo",
             "type": "pupusa",
             "category": "especial",
-            "price": 2,
             "description": "Pupusa de Chorizo acompañada de curtido y salsa.",
-            "image": "/pupusa.png"
+            "image": "pupusa.webp",
+            "variations": [{ "price": 2 }]
         },
         {
             "id": 9,
-            "code": "PU-HON-009",
             "name": "Pupusa de Hongos",
             "type": "pupusa",
             "category": "especial",
-            "price": 2,
             "description": "Pupusa de Hongos acompañada de curtido y salsa.",
-            "image": "/pupusa.png"
+            "image": "pupusa.webp",
+            "variations": [{ "price": 2 }]
         },
         {
             "id": 10,
-            "code": "PU-CAM-010",
             "name": "Pupusa de Camarón",
             "type": "pupusa",
             "category": "especial",
-            "price": 2,
-            "description": "Pupusa de Camarón lo mejor del mar acompañada de curtido y salsa.",
-            "image": "/pupusa.png"
+            "description": "Pupusa de Camarón lo mejor del mar.",
+            "image": "pupusa.webp",
+            "variations": [{ "price": 2 }]
         },
         {
             "id": 11,
-            "code": "PU-LOC-011",
             "name": "Pupusa Loca",
             "type": "pupusa",
             "category": "especial",
-            "price": 6,
-            "description": "Pupusa Loca una explosion de sabores acompañada de curtido y salsa.",
-            "image": "/pupusa.png"
+            "description": "Pupusa Loca una explosion de sabores.",
+            "image": "pupusa.webp",
+            "variations": [{ "price": 6 }]
         },
         {
             "id": 12,
-            "code": "PU-REV-012",
             "name": "Pupusa Revuelta",
             "type": "pupusa",
             "category": "tradicional",
-            "price": 1.5,
             "description": "Pupusa Revuelta acompañada de curtido y salsa.",
-            "image": "/pupusa.png"
+            "image": "pupusa.webp",
+            "variations": [{ "price": 1.5 }]
         },
         {
             "id": 13,
-            "code": "PU-FRI-013",
             "name": "Pupusa de Frijol",
             "type": "pupusa",
             "category": "tradicional",
-            "price": 1,
             "description": "Pupusa de Frijol acompañada de curtido y salsa.",
-            "image": "/pupusa.png"
+            "image": "pupusa.webp",
+            "variations": [{ "price": 1 }]
         },
         {
             "id": 14,
-            "code": "PU-QUE-014",
             "name": "Pupusa de Queso",
             "type": "pupusa",
             "category": "tradicional",
-            "price": 1.5,
             "description": "Pupusa de Queso acompañada de curtido y salsa.",
-            "image": "/pupusa.png"
+            "image": "pupusa.webp",
+            "variations": [{ "price": 1.5 }]
         },
         {
             "id": 15,
-            "code": "PU-FCQ-015",
             "name": "Pupusa de Frijol con Queso",
             "type": "pupusa",
             "category": "tradicional",
-            "price": 1.25,
             "description": "Pupusa de Frijol con Queso acompañada de curtido y salsa.",
-            "image": "/pupusa.png"
+            "image": "pupusa.webp",
+            "variations": [{ "price": 1.25 }]
         },
         {
             "id": 16,
-            "code": "PU-CHI-016",
             "name": "Pupusa de Chicharrón",
             "type": "pupusa",
             "category": "tradicional",
-            "price": 2,
             "description": "Pupusa de Chicharrón acompañada de curtido y salsa.",
-            "image": "/pupusa.png"
+            "image": "pupusa.webp",
+            "variations": [{ "price": 2 }]
         },
         {
             "id": 17,
-            "code": "PU-CHI-QUE-017",
             "name": "Pupusa de Chicharrón con Queso",
             "type": "pupusa",
             "category": "tradicional",
-            "price": 1.5,
             "description": "Pupusa de Chicharrón con Queso acompañada de curtido y salsa.",
-            "image": "/pupusa.png"
+            "image": "pupusa.webp",
+            "variations": [{ "price": 1.5 }]
         },
         {
             "id": 18,
-            "code": "TA-ELO-018",
             "name": "Tamales de Elote",
             "type": "tamal",
             "category": "tradicional",
-            "price": 1.25,
             "description": "Tamales de Elote tradicionales. Se sirven calientes.",
-            "image": "/tamales-elote.png"
+            "image": "tamales-elote.webp",
+            "variations": [{ "price": 1.25 }]
         },
         {
             "id": 19,
-            "code": "TA-POL-019",
             "name": "Tamales de Pollo",
             "type": "tamal",
             "category": "tradicional",
-            "price": 1.5,
             "description": "Tamales de Pollo tradicionales. Se sirven calientes.",
-            "image": "/tamales-pollo.png"
+            "image": "tamales-pollo.webp",
+            "variations": [{ "price": 1.5 }]
         },
         {
             "id": 20,
-            "code": "TA-PIS-020",
             "name": "Tamales Pisques",
             "type": "tamal",
             "category": "tradicional",
-            "price": 1.25,
             "description": "Tamales Pisques tradicionales. Se sirven calientes.",
-            "image": "/tamales-pisques.png"
+            "image": "tamales-pisques.webp",
+            "variations": [{ "price": 1.25 }]
         },
         {
             "id": 21,
-            "code": "SA-DE-POLLO-021",
             "name": "Sandwich de Pollo",
             "type": "sandwich",
             "category": "comida",
-            "price": 2.25,
             "description": "Sandwich de Pollo preparado al momento.",
-            "image": "/images/menu/SA-DE-POLLO-021.png"
+            "image": "hero.webp",
+            "variations": [{ "price": 2.25 }]
         },
         {
             "id": 22,
-            "code": "SA-DE-JAM-022",
             "name": "Sandwich de Jamon",
             "type": "sandwich",
             "category": "comida",
-            "price": 2,
             "description": "Sandwich de Jamon preparado al momento.",
-            "image": "/images/menu/SA-DE-JAM-022.png"
+            "image": "hero.webp",
+            "variations": [{ "price": 2 }]
         },
         {
             "id": 23,
-            "code": "CA-CAF-023",
-            "name": "Café 8 Onzas",
+            "name": "Café",
             "type": "bebida",
             "category": "café",
-            "price": 1.5,
-            "description": "Café 8 Onzas.",
-            "image": "/cafe.png"
-        },
-        {
-            "id": 24,
-            "code": "CA-CAF-024",
-            "name": "Café 12 Onzas",
-            "type": "bebida",
-            "category": "café",
-            "price": 1.75,
-            "description": "Café 12 Onzas.",
-            "image": "/cafe.png"
-        },
-        {
-            "id": 25,
-            "code": "CA-CAF-025",
-            "name": "Café de 16 Onzas",
-            "type": "bebida",
-            "category": "café",
-            "price": 2,
-            "description": "Café de 16 Onzas.",
-            "image": "/cafe.png"
+            "description": "Café caliente servido al gusto con su aroma tradicional.",
+            "image": "cafe.webp",
+            "variations": [
+                { "size": "8oz", "price": 1.5 },
+                { "size": "12oz", "price": 1.75 },
+                { "size": "16oz", "price": 2 }
+            ]
         },
         {
             "id": 26,
-            "code": "CH-CHO-026",
-            "name": "Chocolate 8 Onzas",
+            "name": "Chocolate",
             "type": "bebida",
-            "category": "chocolate",
-            "price": 1.75,
-            "description": "Chocolate 8 Onzas.",
-            "image": "/chocolate.png"
+            "category": "café",
+            "description": "Delicioso chocolate caliente.",
+            "image": "chocolate.webp",
+            "variations": [{ "size": "8oz", "price": 1.75 }]
         },
         {
             "id": 27,
-            "code": "LE-LEC-027",
-            "name": "Leche 8 Onzas",
+            "name": "Leche",
             "type": "bebida",
-            "category": "lácteo",
-            "price": 1.75,
-            "description": "Leche 8 Onzas.",
-            "image": "/leche.png"
+            "category": "café",
+            "description": "Vaso de leche fresca.",
+            "image": "leche.webp",
+            "variations": [{ "size": "8oz", "price": 1.75 }]
         },
         {
             "id": 28,
-            "code": "SD-COC-028",
-            "name": "Coca Lata 12 Onzas",
+            "name": "Coca Cola",
             "type": "bebida",
             "category": "gaseosa",
-            "price": 2,
-            "description": "Coca Lata 12 Onzas.",
-            "image": "/cocacola.png"
+            "description": "Bebida refrescante en lata.",
+            "image": "cocacola.webp",
+            "variations": [{ "size": "12oz", "price": 2 }]
         },
         {
             "id": 29,
-            "code": "SD-COL-029",
-            "name": "Cola Champán 12 Onzas",
+            "name": "Cola Champán",
             "type": "bebida",
             "category": "gaseosa",
-            "price": 2,
-            "description": "Cola Champán 12 Onzas.",
-            "image": "/kolashanpan.png"
+            "description": "Sabor tradicional de El Salvador.",
+            "image": "kolashanpan.webp",
+            "variations": [{ "size": "12oz", "price": 2 }]
         },
         {
             "id": 30,
-            "code": "SD-FAN-030",
-            "name": "Fanta Lata 12 Onzas",
+            "name": "Fanta",
             "type": "bebida",
             "category": "gaseosa",
-            "price": 2,
-            "description": "Fanta Lata 12 Onzas.",
-            "image": "/fanta.png"
+            "description": "Fanta sabor naranja en lata.",
+            "image": "fanta.webp",
+            "variations": [{ "size": "12oz", "price": 2 }]
         },
         {
             "id": 31,
-            "code": "SD-FRE-031",
-            "name": "Fresa Lata 8 Onzas",
+            "name": "Fresa",
             "type": "bebida",
             "category": "gaseosa",
-            "price": 2,
-            "description": "Fresa Lata 8 Onzas.",
-            "image": "/fresa.png"
+            "description": "Gaseosa sabor fresa.",
+            "image": "fresa.webp",
+            "variations": [{ "size": "8oz", "price": 2 }]
         },
         {
             "id": 32,
-            "code": "SD-SPR-032",
-            "name": "Sprite Lata 12 Onzas",
+            "name": "Sprite",
             "type": "bebida",
             "category": "gaseosa",
-            "price": 2,
-            "description": "Sprite Lata 12 Onzas.",
-            "image": "/sprite.png"
+            "description": "Refresco lima-limón en lata.",
+            "image": "sprite.webp",
+            "variations": [{ "size": "12oz", "price": 2 }]
         },
         {
             "id": 33,
-            "code": "SD-UVA-033",
-            "name": "Uva Lata 500ml",
+            "name": "Uva",
             "type": "bebida",
             "category": "gaseosa",
-            "price": 2,
-            "description": "Uva Lata 500ml.",
-            "image": "/uva.png"
+            "description": "Gaseosa sabor uva.",
+            "image": "uva.webp",
+            "variations": [{ "size": "500ml", "price": 2 }]
         },
         {
             "id": 34,
-            "code": "SD-MIN-034",
             "name": "Agua Mineral",
             "type": "bebida",
             "category": "gaseosa",
-            "price": 2,
-            "description": "Agua Mineral.",
-            "image": "/aguam.png"
+            "description": "Agua mineral Salutaris.",
+            "image": "salutaris.webp",
+            "variations": [{ "price": 2 }]
         },
         {
             "id": 35,
-            "code": "JG-NAR-035",
-            "name": "Jugo de Mandarina 500ml",
+            "name": "Jugo de Mandarina",
             "type": "bebida",
             "category": "jugo",
-            "price": 2,
-            "description": "Jugo de Mandarina 500ml.",
-            "image": "/jugo-mandarina.png"
+            "description": "Jugo natural de mandarina.",
+            "image": "mandarina.webp",
+            "variations": [{ "size": "500ml", "price": 2 }]
         },
         {
             "id": 36,
-            "code": "JG-MAN-036",
-            "name": "Jugo Naranja 500ml",
+            "name": "Jugo de Naranja",
             "type": "bebida",
             "category": "jugo",
-            "price": 2,
-            "description": "Jugo Naranja 500ml.",
-            "image": "/jugo-naranja.png"
+            "description": "Jugo natural de naranja.",
+            "image": "naranja.webp",
+            "variations": [{ "size": "500ml", "price": 2 }]
         },
         {
             "id": 37,
-            "code": "TE-DUR-037",
-            "name": "Té de Durazno 500ml",
+            "name": "Té de Durazno",
             "type": "bebida",
             "category": "té",
-            "price": 2,
-            "description": "Té de Durazno 500ml.",
-            "image": "/te-durazno.png"
+            "description": "Té helado sabor durazno.",
+            "image": "te-durazno.webp",
+            "variations": [{ "size": "500ml", "price": 2 }]
         },
         {
             "id": 38,
-            "code": "TE-FRA-038",
-            "name": "Té de Frambuesa 500ml",
+            "name": "Té de Frambuesa",
             "type": "bebida",
             "category": "té",
-            "price": 2,
-            "description": "Té de Frambuesa 500ml.",
-            "image": "/te-frambuesa.png"
+            "description": "Té helado sabor frambuesa.",
+            "image": "te-frambuesa.webp",
+            "variations": [{ "size": "500ml", "price": 2 }]
         },
         {
             "id": 39,
-            "code": "TE-LIM-039",
-            "name": "Té de Limón 500ml",
+            "name": "Té de Limón",
             "type": "bebida",
             "category": "té",
-            "price": 2,
-            "description": "Té de Limón 500ml.",
-            "image": "/te-limon.png"
+            "description": "Té helado sabor limón.",
+            "image": "te-limon.webp",
+            "variations": [{ "size": "500ml", "price": 2 }]
         },
         {
             "id": 40,
-            "code": "AG-AGU-040",
-            "name": "Botella con Agua 600 Ml",
+            "name": "Botella de Agua",
             "type": "bebida",
             "category": "agua",
-            "price": 1.5,
-            "description": "Botella con Agua 600 Ml.",
-            "image": "/agua.png"
+            "description": "Agua pura embotellada.",
+            "image": "agua.webp",
+            "variations": [{ "size": "600ml", "price": 1.5 }]
         },
         {
             "id": 41,
-            "code": "FR-JAM-041",
-            "name": "Frescos Naturales de Jamaica 12 Onzas",
+            "name": "Fresco de Jamaica",
             "type": "bebida",
             "category": "fresco",
-            "price": 2.25,
-            "description": "Frescos Naturales de Jamaica 12 Onzas natural.",
-            "image": "/jamaica.png"
+            "description": "Bebida natural de Jamaica.",
+            "image": "jamaica.webp",
+            "variations": [{ "size": "12oz", "price": 2.25 }]
         },
         {
             "id": 42,
-            "code": "FR-ORC-042",
-            "name": "Frescos Naturales de Orchata 16 Onzas",
+            "name": "Fresco de Horchata",
             "type": "bebida",
             "category": "fresco",
-            "price": 2.75,
-            "description": "Frescos Naturales de Orchata 16 Onzas natural.",
-            "image": "/orchata.png"
+            "description": "Bebida típica de Horchata.",
+            "image": "orchata.webp",
+            "variations": [{ "size": "16oz", "price": 2.75 }]
         },
         {
             "id": 43,
-            "code": "LI-DE-ESP-043",
             "name": "Espinaca con Manzana",
             "type": "bebida",
             "category": "licuado",
-            "price": 3.5,
-            "description": "Espinaca con Manzana natural, preparado al momento.",
-            "image": "/espinaca-manzana.png"
+            "description": "Licuado nutritivo preparado al momento.",
+            "image": "manzana-espinaca.webp",
+            "variations": [{ "price": 3.5 }]
         },
         {
             "id": 44,
-            "code": "LI-DE-ESP-PIÑ-044",
             "name": "Espinaca con Piña",
             "type": "bebida",
             "category": "licuado",
-            "price": 3.5,
-            "description": "Espinaca con Piña natural, preparado al momento.",
-            "image": "/espinaca-pinia.png"
+            "description": "Sabor tropical y saludable.",
+            "image": "piña-espinaca.webp",
+            "variations": [{ "price": 3.5 }]
         },
         {
             "id": 45,
-            "code": "LI-PEP-LIM-045",
             "name": "Pepino con Limón",
             "type": "bebida",
             "category": "licuado",
-            "price": 3.5,
-            "description": "Pepino con Limón natural, preparado al momento.",
-            "image": "/pepino-limon.png"
+            "description": "Súper refrescante.",
+            "image": "pepino-limon.webp",
+            "variations": [{ "price": 3.5 }]
         },
         {
             "id": 46,
-            "code": "LI-PEP-PIÑ-046",
             "name": "Pepino y Piña",
             "type": "bebida",
             "category": "licuado",
-            "price": 3.5,
-            "description": "Pepino y Piña natural, preparado al momento.",
-            "image": "/pepino-pinia.png"
+            "description": "Mezcla fresca y dulce.",
+            "image": "pepino-piña.webp",
+            "variations": [{ "price": 3.5 }]
         },
         {
             "id": 47,
-            "code": "LI-API-MAN-047",
             "name": "Apio y Manzana Verde",
             "type": "bebida",
             "category": "licuado",
-            "price": 3.5,
-            "description": "Apio y Manzana Verde natural, preparado al momento.",
-            "image": "/apio-manzana.png"
+            "description": "Ideal para comenzar el día.",
+            "image": "manzana-espinaca.webp",
+            "variations": [{ "price": 3.5 }]
         },
         {
             "id": 48,
-            "code": "LI-API-PIÑ-048",
             "name": "Apio y Piña",
             "type": "bebida",
             "category": "licuado",
-            "price": 3.5,
-            "description": "Apio y Piña natural, preparado al momento.",
-            "image": "/apio-pinia.png"
+            "description": "Desintoxicante y delicioso.",
+            "image": "piña-espinaca.webp",
+            "variations": [{ "price": 3.5 }]
         },
         {
             "id": 49,
-            "code": "LI-LEC-MAN-049",
             "name": "Lechuga con Manzana",
             "type": "bebida",
             "category": "licuado",
-            "price": 3.5,
-            "description": "Lechuga con Manzana natural, preparado al momento.",
-            "image": "/images/menu/LI-LEC-MAN-049.png"
+            "description": "Combinación suave y nutritiva.",
+            "image": "manzana-espinaca.webp",
+            "variations": [{ "price": 3.5 }]
         },
         {
             "id": 50,
-            "code": "LI-PIÑ-GEN-050",
             "name": "Piña Jengibre y Agua",
             "type": "bebida",
             "category": "licuado",
-            "price": 3.5,
-            "description": "Piña Jengibre y Agua natural, preparado al momento.",
-            "image": "/images/menu/LI-PIÑ-GEN-050.png"
+            "description": "Picante sutil y mucha energía.",
+            "image": "piña-espinaca.webp",
+            "variations": [{ "price": 3.5 }]
         },
         {
             "id": 51,
-            "code": "LI-PAP-LIM-051",
             "name": "Papaya Limón",
             "type": "bebida",
             "category": "licuado",
-            "price": 3.5,
-            "description": "Papaya Limón natural, preparado al momento.",
-            "image": "/images/menu/LI-PAP-LIM-051.png"
+            "description": "Digestivo y dulce.",
+            "image": "mandarina.webp",
+            "variations": [{ "price": 3.5 }]
         },
         {
             "id": 52,
-            "code": "LI-TOR-NAR-052",
             "name": "Toronja y Naranja",
             "type": "bebida",
             "category": "licuado",
-            "price": 3.5,
-            "description": "Toronja y Naranja natural, preparado al momento.",
-            "image": "/images/menu/LI-TOR-NAR-052.png"
+            "description": "Vitamina C al máximo.",
+            "image": "naranja.webp",
+            "variations": [{ "price": 3.5 }]
         },
         {
             "id": 53,
-            "code": "LI-BAN-LEC-053",
             "name": "Banano con Leche",
             "type": "bebida",
             "category": "licuado",
-            "price": 3.5,
-            "description": "Banano con Leche natural, preparado al momento.",
-            "image": "/images/menu/LI-BAN-LEC-053.png"
+            "description": "Clásico y cremoso.",
+            "image": "banano-leche.webp",
+            "variations": [{ "price": 3.5 }]
         },
         {
             "id": 54,
-            "code": "LI-FRE-LEC-054",
             "name": "Fresa con Leche",
             "type": "bebida",
             "category": "licuado",
-            "price": 3.5,
-            "description": "Fresa con Leche natural, preparado al momento.",
-            "image": "/images/menu/LI-FRE-LEC-054.png"
+            "description": "Favorito de todos.",
+            "image": "fresa-leche.webp",
+            "variations": [{ "price": 3.5 }]
         },
         {
             "id": 55,
-            "code": "LI-GAL-ORE-055",
             "name": "Galleta Oreo",
             "type": "bebida",
             "category": "licuado",
-            "price": 3.5,
-            "description": "Galleta Oreo natural, preparado al momento.",
-            "image": "/images/menu/LI-GAL-ORE-055.png"
+            "description": "Para un antojo especial.",
+            "image": "oreo.webp",
+            "variations": [{ "price": 3.5 }]
         },
         {
             "id": 56,
-            "code": "LI-CAF-LEC-056",
             "name": "Café con Leche",
             "type": "bebida",
-            "category": "licuado",
-            "price": 3.5,
-            "description": "Café con Leche natural, preparado al momento.",
-            "image": "/images/menu/LI-CAF-LEC-056.png"
+            "category": "café",
+            "description": "Energía y cremosidad.",
+            "image": "cafe-leche.webp",
+            "variations": [{ "price": 3.5 }]
         },
         {
             "id": 57,
-            "code": "LI-AVE-BAN-057",
             "name": "Avena y Banano",
             "type": "bebida",
             "category": "licuado",
-            "price": 3.5,
-            "description": "Avena y Banano natural, preparado al momento.",
-            "image": "/images/menu/LI-AVE-BAN-057.png"
+            "description": "Completo y satisfactorio.",
+            "image": "banano-leche.webp",
+            "variations": [{ "price": 3.5 }]
         },
         {
             "id": 58,
-            "code": "LI-AVE-MAN-058",
             "name": "Avena y Manzana",
             "type": "bebida",
             "category": "licuado",
-            "price": 3.5,
-            "description": "Avena y Manzana natural, preparado al momento.",
-            "image": "/images/menu/LI-AVE-MAN-058.png"
+            "description": "Equilibrado y delicioso.",
+            "image": "manzana-espinaca.webp",
+            "variations": [{ "price": 3.5 }]
         },
         {
             "id": 59,
-            "code": "LI-ZAN-NAR-059",
             "name": "Zanahoria con Naranja",
             "type": "bebida",
             "category": "licuado",
-            "price": 3.5,
-            "description": "Zanahoria con Naranja natural, preparado al momento.",
-            "image": "/images/menu/LI-ZAN-NAR-059.png"
+            "description": "Brillo y salud.",
+            "image": "zanahoria-naranja.webp",
+            "variations": [{ "price": 3.5 }]
         },
         {
             "id": 60,
-            "code": "LI-REM-CON-NAR-060",
             "name": "Remolacha con Naranja",
             "type": "bebida",
             "category": "licuado",
-            "price": 3.5,
-            "description": "Remolacha con Naranja natural, preparado al momento.",
-            "image": "/images/menu/LI-REM-CON-NAR-060.png"
+            "description": "Sabor vibrante.",
+            "image": "remolacha-naranja.webp",
+            "variations": [{ "price": 3.5 }]
         },
         {
             "id": 61,
-            "code": "LI-TOM-API-061",
             "name": "Tomate con Apio",
             "type": "bebida",
             "category": "licuado",
-            "price": 3.5,
-            "description": "Tomate con Apio natural, preparado al momento.",
-            "image": "/images/menu/LI-TOM-API-061.png"
+            "description": "Saludable y refrescante.",
+            "image": "tomate-apio.webp",
+            "variations": [{ "price": 3.5 }]
         },
         {
             "id": 62,
-            "code": "LI-CAF-CON-HUE-062",
             "name": "Café con Huevo",
             "type": "bebida",
-            "category": "licuado",
-            "price": 3.5,
-            "description": "Café con Huevo natural, preparado al momento.",
-            "image": "/images/menu/LI-CAF-CON-HUE-062.png"
+            "category": "café",
+            "description": "Tradicional y nutritivo.",
+            "image": "cafe-huevo.png",
+            "variations": [{ "price": 3.5 }]
         },
         {
             "id": 63,
-            "code": "LI-NAR-CON-ARA-063",
             "name": "Naranja con Arándanos",
             "type": "bebida",
             "category": "licuado",
-            "price": 3.5,
-            "description": "Naranja con Arándanos natural, preparado al momento.",
-            "image": "/images/menu/LI-NAR-CON-ARA-063.png"
+            "description": "Anti-oxidante natural.",
+            "image": "naranja-arandanos.webp",
+            "variations": [{ "price": 3.5 }]
         }
     ]);
+
+    const [activeBeverageFilter, setActiveBeverageFilter] = useState("todos");
+
+    const beverageCategories = ["todos", "café", "jugo", "té", "gaseosa", "fresco", "licuado", "agua"];
 
     return (
         <section className="py-16 md:py-24 bg-white" id="menu">
@@ -650,19 +577,42 @@ export default function FoodMenu() {
                 <MenuCategory title="Pupusas Tradicionales" items={menu.filter((item) => item.category === "tradicional" && item.type === "pupusa")} />
                 <MenuCategory title="Pupusas Especiales" items={menu.filter((item) => item.category === "especial" && item.type === "pupusa")} />
                 <MenuCategory title="Tamales" items={menu.filter((item) => item.type === "tamal")} />
-                <MenuCategory title="Bebidas" items={menu.filter((item) => item.type === "bebida")} />
+
+                <MenuCategory
+                    title="Bebidas"
+                    items={menu.filter((item) =>
+                        item.type === "bebida" &&
+                        (activeBeverageFilter === "todos" || item.category === activeBeverageFilter)
+                    )}
+                >
+                    <div className="flex flex-wrap items-center gap-2 mb-8">
+                        {beverageCategories.map((cat) => (
+                            <button
+                                key={cat}
+                                onClick={() => setActiveBeverageFilter(cat)}
+                                className={`px-5 py-2 rounded-full cursor-pointer text-sm font-bold capitalize transition-all duration-300 ${activeBeverageFilter === cat
+                                    ? "bg-amber-500 text-white shadow-lg shadow-amber-200 scale-105"
+                                    : "bg-orange-50 text-orange-400 hover:bg-orange-100"
+                                    }`}
+                            >
+                                {cat}
+                            </button>
+                        ))}
+                    </div>
+                </MenuCategory>
             </div>
         </section>
     )
 }
 
-function MenuCategory({ title, items }: { title: string, items: any[] }) {
-    if (items.length === 0) return null;
+function MenuCategory({ title, items, children }: { title: string, items: any[], children?: React.ReactNode }) {
+    if (items.length === 0 && !children) return null;
     return (
         <div className="mb-16">
             <h3 className="text-2xl md:text-3xl font-bold text-slate-700 mb-8 border-l-4 border-amber-500 pl-4">
                 {title}
             </h3>
+            {children}
             {/* Contenedor con scroll suave y ocultamiento de barra de scroll */}
             <div className="flex overflow-x-auto pb-8 gap-6 snap-x snap-mandatory scrollbar-hide">
                 {items.map((item) => (
@@ -675,7 +625,7 @@ function MenuCategory({ title, items }: { title: string, items: any[] }) {
 
 function MenuItem({ item }: { item: any }) {
     return (
-        <div className="shrink-0 w-72 snap-start bg-orange-50/50 rounded-3xl p-6 transition-all duration-300 hover:shadow-xl hover:bg-white border border-transparent hover:border-orange-100 group">
+        <div className="shrink-0 w-72 snap-start bg-orange-50/50 rounded-3xl p-6 transition-all duration-300 hover:shadow-xl hover:bg-white border border-transparent hover:border-orange-100 group flex flex-col">
             <div className="relative mb-4 flex justify-center">
                 <div className="absolute inset-0 bg-amber-200 rounded-full blur-xl opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
                 <img
@@ -685,17 +635,26 @@ function MenuItem({ item }: { item: any }) {
                 />
             </div>
 
-            <div className="space-y-2 text-center">
+            <div className="space-y-2 text-center grow">
                 <h4 className="font-bold text-xl text-slate-800 leading-tight group-hover:text-amber-600 transition-colors">
                     {item.name}
                 </h4>
                 <p className="text-sm text-slate-500 line-clamp-2 h-10">
                     {item.description}
                 </p>
-                <div className="pt-2 flex items-center justify-center gap-2">
-                    <span className="text-2xl font-black text-slate-800">
-                        ${item.price.toFixed(2)}
-                    </span>
+                <div className="pt-4 space-y-2">
+                    {item.variations.map((v: any, index: number) => (
+                        <div key={index} className="flex items-center justify-between bg-white/60 rounded-full px-4 py-1.5 border border-orange-100/50">
+                            {v.size ? (
+                                <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">{v.size}</span>
+                            ) : (
+                                <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">Precio</span>
+                            )}
+                            <span className="text-lg font-black text-slate-800">
+                                ${v.price.toFixed(2)}
+                            </span>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>

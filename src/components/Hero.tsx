@@ -11,7 +11,7 @@ export default function Hero() {
                 <div className="w-full md:w-1/2 relative flex justify-center">
                     <div className="absolute inset-0 bg-linear-to-tr from-orange-400 to-amber-300 rounded-full blur-2xl opacity-40 transform scale-90 translate-y-4"></div>
                     <img
-                        src={`${import.meta.env.BASE_URL}hero.png`}
+                        src={`${import.meta.env.BASE_URL}hero.webp`}
                         alt="Plato de pupusas deliciosas"
                         className="relative w-full max-w-md md:max-w-lg object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500"
                     />

@@ -14,7 +14,8 @@ export default function Header() {
 
     return (
         <header className="flex justify-between items-center p-4 sticky top-0 z-40 backdrop-blur-md bg-orange-50/90">
-            <img src={`${import.meta.env.BASE_URL}logo.png`} alt="logo" className="w-18 h-18 object-contain drop-shadow-md" />
+            <img src={`${import.meta.env.BASE_URL}logo.webp`} alt="logo" className="w-40 h-18 object-contain drop-shadow-md md:hidden" />
+            <img src={`${import.meta.env.BASE_URL}logo_no_text.webp`} alt="logo" className="w-18 h-18 object-contain drop-shadow-md hidden md:block" />
             <button className="md:hidden cursor-pointer text-slate-800" onClick={() => setCollapse(!collapse)}>
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />

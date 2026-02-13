@@ -2,13 +2,11 @@ export default function Footer() {
     return (
         <footer className="bg-zinc-900 py-12 border-t-8 border-amber-600 text-white">
             <div className="container mx-auto px-4">
-                <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                     <div className="text-center md:text-left">
-                        <h3 className="text-2xl font-black text-white">
-                            Pupusería <span className="text-amber-500">Esperanza</span>
-                        </h3>
+                        <img src={`${import.meta.env.BASE_URL}logo.webp`} alt="logo" className="w-60 h-32 object-contain drop-shadow-md" />
                         <p className="text-zinc-400 mt-2">
-                            El auténtico sabor salvadoreño.
+                            Hechas con amor, servidas con sabor.
                         </p>
                     </div>
 
