@@ -382,7 +382,7 @@ export default function FoodMenu() {
             "type": "bebida",
             "category": "licuado",
             "description": "Sabor tropical y saludable.",
-            "image": "piña-espinaca.webp",
+            "image": "pepino-piña.webp",
             "variations": [{ "price": 3.5 }]
         },
         {
@@ -418,7 +418,7 @@ export default function FoodMenu() {
             "type": "bebida",
             "category": "licuado",
             "description": "Desintoxicante y delicioso.",
-            "image": "piña-espinaca.webp",
+            "image": "pepino-piña.webp",
             "variations": [{ "price": 3.5 }]
         },
         {
@@ -436,7 +436,7 @@ export default function FoodMenu() {
             "type": "bebida",
             "category": "licuado",
             "description": "Picante sutil y mucha energía.",
-            "image": "piña-espinaca.webp",
+            "image": "pepino-piña.webp",
             "variations": [{ "price": 3.5 }]
         },
         {
