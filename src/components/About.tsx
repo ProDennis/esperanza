@@ -12,7 +12,7 @@ export default function About() {
                     <div className="w-full md:w-1/2 relative">
                         <div className="relative rounded-3xl overflow-hidden shadow-2xl transform rotate-2 hover:rotate-0 transition-transform duration-500">
                             <img
-                                src={`${import.meta.env.BASE_URL}pupusa.webp`}
+                                src={`${import.meta.env.BASE_URL}local.webp`}
                                 alt="Preparación tradicional"
                                 className="w-full h-auto object-cover bg-white"
                             />

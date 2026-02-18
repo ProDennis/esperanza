@@ -35,8 +35,7 @@ export default function Contact() {
                                     title="Horarios"
                                     content={
                                         <ul className="space-y-1">
-                                            <li>Lunes - Viernes: 7:00 AM - 9:00 PM</li>
-                                            <li>Sábado - Domingo: 8:00 AM - 10:00 PM</li>
+                                            <li>Lunes - Domingo: 6:00 AM - 10:00 PM</li>
                                         </ul>
                                     }
                                 />

@@ -118,7 +118,7 @@ export default function FoodMenu() {
             "category": "tradicional",
             "description": "Pupusa de Frijol acompañada de curtido y salsa.",
             "image": "pupusa.webp",
-            "variations": [{ "price": 1 }]
+            "variations": [{ "price": 1.25 }]
         },
         {
             "id": 14,
@@ -243,7 +243,7 @@ export default function FoodMenu() {
         },
         {
             "id": 29,
-            "name": "Cola Champán",
+            "name": "Kolashanpan",
             "type": "bebida",
             "category": "gaseosa",
             "description": "Sabor tradicional de El Salvador.",
@@ -445,7 +445,7 @@ export default function FoodMenu() {
             "type": "bebida",
             "category": "licuado",
             "description": "Digestivo y dulce.",
-            "image": "mandarina.webp",
+            "image": "papaya-limon.webp",
             "variations": [{ "price": 3.5 }]
         },
         {
@@ -454,7 +454,7 @@ export default function FoodMenu() {
             "type": "bebida",
             "category": "licuado",
             "description": "Vitamina C al máximo.",
-            "image": "naranja.webp",
+            "image": "toronja-naranja.webp",
             "variations": [{ "price": 3.5 }]
         },
         {
